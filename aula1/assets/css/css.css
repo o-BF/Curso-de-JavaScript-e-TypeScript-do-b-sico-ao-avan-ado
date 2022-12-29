@@ -14,6 +14,7 @@ font-family: 'Open Sans', sans-serif; */
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -143,3 +144,226 @@ a {
     width: 100%;
     
     }
+
+.espaço-menu {
+    height: 64px;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100vh;
+    gap: var(--gap);
+    
+}
+
+.intro-texto-container, .img-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.intro-texto-container h2 {
+    font-size: 8rem;
+    margin-bottom: 6rem;
+}
+
+.intro-texto-container p {
+    font-size: 2.5rem;
+}
+
+.img-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-container {
+    max-width: 64rem;
+}
+
+.top-text {
+   justify-content: center;
+   flex-flow: row wrap;
+   gap: var(--gap);
+    display: flex;
+    height: auto;
+}
+
+.top-text h2 {
+    font-size: 5rem;
+    margin: 10rem 0 3rem 0;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0.2rem;
+
+}
+
+.top-text p {
+    text-decoration: solid;
+    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.grid-text-container {
+ min-height: 100vh;
+}
+
+.grid-container {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 40rem 60rem;
+ grid-template-areas: 
+ "area1 area1 area1"
+ "area2 area3 area4";
+ gap: var(--gap);
+ min-height: 100vh;
+ 
+
+}
+
+
+#grid-area1 {
+    grid-area: area1;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#grid-area1 p {
+    margin-left: 0.5rem;
+}
+
+#grid-area2 {
+    grid-area: area2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+#grid-area3 {
+    grid-area: area3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+#grid-area4 {
+    grid-area: area4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.grid-container article h3 {
+    font-size: 4rem;
+    font-style: italic;
+    padding-bottom: 5rem;
+    }
+
+.gallery-title {
+    margin-top: 2rem;
+
+}
+.gallery-title div {
+    padding-bottom: 3rem ;
+    margin-left: 1rem;
+
+}
+
+.gallery-title div h2 {
+
+    font-size: 7rem;
+}
+
+.gallery-title p {
+    margin-left: 1rem;
+    font-size: 3rem;
+
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 36rem 36rem;
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+
+}
+
+.test1 {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    
+}
+
+.imgdiv {
+     width: 100%;
+     max-width: 38rem;
+     max-height: 36rem;
+     overflow: hidden;    
+}
+
+.imgdiv img {
+    transition: all 300ms ease-in-out;
+}
+
+.imgdiv img:hover {
+    transform: translate(-2%, 2%) scale(1.2) rotate(3deg) ;
+}
+
+.bf {
+    
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.price-tabble {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 64rem;
+    margin-top: 10rem;
+    
+}
+  
+.price-tabble p {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2.2rem;
+    margin-bottom: 10rem;
+    
+  }
+
+  table {
+    min-width: 50rem;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-grey);
+  }
+
+  tfoot td, table th {
+    background: var(--light-grey); }
+
+

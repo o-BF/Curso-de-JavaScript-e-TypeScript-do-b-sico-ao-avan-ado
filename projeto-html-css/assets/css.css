@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #2DC6B1;
+    --terciary-color: #79E7DE;
+    --padding: 3rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/img/scattered-forcefields.svg);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+p {
+ font-size: 2.5rem;
+}
+
+.grid-container {
+    height: 90vh;
+    min-width: 100vh;
+    max-width: 90rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.grid {
+    width: 100%;
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    'a1 a1'
+    'a2 a3';
+}
+
+.b1 {
+    grid-area: a1;
+    padding: 3rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: var(--primary-color)
+}
+
+.b1 h1 {
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.b1 h2 {
+    color: #EDF24E;
+    margin-bottom: 2rem;
+}
+
+.b1 p {
+    color: #BFC6C5;
+}
+
+.b2 {
+    grid-area: a2;
+    background-color: var(--secondary-color);
+    padding: var(--padding);
+    color: var(--primary-color);
+}
+
+.b2 h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.b3 {
+    grid-area: a3;
+    background-color: var(--terciary-color);
+    padding: var(--padding);
+}
+

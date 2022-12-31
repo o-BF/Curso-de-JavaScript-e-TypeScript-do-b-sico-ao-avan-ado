@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image: url(../assets/img/scattered-forcefields.svg);
+   background-image: url(../img/scattered-forcefields.svg);
 }
 
 html {
@@ -32,8 +32,8 @@ p {
 }
 
 .grid-container {
-    height: 90vh;
-    min-width: 100vh;
+    height: 100vh;
+    min-height: 100vh;
     max-width: 90rem;
     display: flex;
     margin: 0 auto;
@@ -41,7 +41,8 @@ p {
 
 .grid {
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -52,19 +53,20 @@ p {
 
 .b1 {
     grid-area: a1;
-    padding: 3rem;
+    padding: var(--padding);
     border-radius: 2rem 2rem 0 0;
     background-color: var(--primary-color)
 }
 
 .b1 h1 {
     color: var(--secondary-color);
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
 }
 
 .b1 h2 {
     color: #EDF24E;
-    margin-bottom: 2rem;
+    margin-bottom: 4.5rem;
 }
 
 .b1 p {
@@ -83,9 +85,66 @@ p {
     margin-bottom: 1.5rem;
 }
 
+
+.b2 button {
+    margin-top: 2rem;
+    background-color: #DCF540;
+    color: var(--primary-color);
+    width: 100%;
+    height: auto;
+    min-height: 5rem;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+    border-radius: 1rem;
+}
+
+.b2 button:hover {
+    background-color: green;
+}
+
+.b2 button a {
+    text-decoration: none;
+    color: inherit;
+}
+.small-gray {
+    color: lightgray;
+}
+
+.bigger {
+    font-size: 10rem;
+    color: var(--primary-color);
+}
+
+
+
 .b3 {
     grid-area: a3;
     background-color: var(--terciary-color);
     padding: var(--padding);
+    color: var(--primary-color);
 }
 
+.b3 h2 {
+   margin-left: 3rem;
+   font-size: 4rem;
+   margin-bottom: 3rem;
+}
+
+.b3 p {
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+       
+} }

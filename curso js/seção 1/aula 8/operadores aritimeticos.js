@@ -18,3 +18,16 @@ valor da variavel += valor ou numero ( pode ser qualquer operador)
 let num1 = 5
 let num2 = parseInt('5');
 console.log(num1 + num2);
+
+let numero1 = 10
+numero1++
+numero1++
+console.log(numero1)
+numero1++
+numero1++
+console.log(numero1)
+
+
+
+numero1*=numero1
+console.log(numero1)

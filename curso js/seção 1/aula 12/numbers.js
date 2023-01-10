@@ -15,6 +15,8 @@ num3 += num4;  // 0.9
 num3 += num4;  // 1.0
 */
 
+
+// arrumando matematicamente as imprecisões
 num3 = ((num3 * 100)  +  (num4 * 100)) / 100;
 num3 = ((num3 * 100)  +  (num4 * 100)) / 100;
 num3 = ((num3 * 100)  +  (num4 * 100)) / 100;

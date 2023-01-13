@@ -1,0 +1,11 @@
+.divform {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.divform div {
+    margin: 20px 0 20px 0;
+}

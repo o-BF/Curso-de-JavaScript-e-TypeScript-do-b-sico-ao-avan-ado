@@ -8,14 +8,14 @@
     outline: none;
     font-size: 62.5%;
 
-    
+
 }
 
 body {
     margin: 0;
     padding: 0;
     background: var(--bluesolid);
-    
+
 }
 
 .main-container h1 {
@@ -44,7 +44,10 @@ form {
     border-radius: 2rem;
 }
 
-form input, form label, form button, .result {
+form input,
+form label,
+form button,
+.result {
 
     display: block;
     width: 100%;
@@ -58,6 +61,7 @@ form input {
     height: 4rem;
     padding: 0 2rem;
 }
+
 form input:focus {
     outline: 0.1rem solid var(--bluesolid);
 }
@@ -78,7 +82,30 @@ form button:hover {
 
 .text-container {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     font-size: 6rem;
 }
 
+#result {
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.80);
+    color: #fff;
+    height: 3rem;
+    text-align: center;
+    font-size: 2.2rem;
+
+}
+
+.p-result {
+
+    background-color: rgb(57, 165, 111);
+    padding: 1rem 1.6rem;
+    text-align: center;
+}
+
+.bad {
+
+    background-color: rgb(163, 35, 35);
+    padding: 1rem 1.6rem;
+    text-align: center;
+}
